@@ -1,0 +1,9 @@
+name: my-svelte-project
+services:
+    nginx:
+        image: svelte-app-nginx
+        ports:
+            - 80:80
+        environment:
+        - NGINX_HOST=localhost
+        - NGINX_PORT=80
